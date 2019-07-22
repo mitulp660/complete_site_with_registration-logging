@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">About</div>
+                <div class="card-header">Profile</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,12 +14,19 @@
                         </div>
                     @endif
 
-                   About the site for only a logged on user can see<br>
+                  @foreach ($users as $user)
+                            <p>This is user {{ $user->name.  'ID:' . $user->id }}</p>
+                        @endforeach<br>
 
-                        For welcome screen  click on Laravel on left hand-Top
+                         <br>
+
                 </div>
+
             </div>
         </div>
     </div>
+</div>
+<div align="center">
+    For welcome screen  click on Laravel on left hand-Top
 </div>
 @endsection

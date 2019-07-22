@@ -20,7 +20,11 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/about', 'HomeController@about')->name('about');
+
+Route::get('/profile', 'HomeController@profile')->name('profile');
+
 Route::get('/contact', 'HomeController@contact')->name('contact');
+
 Route::post('/contact','HomeController@store')->name('contact.store');
 
 Route::get('/thanks/{name}','HomeController@thanks')->name('thanks');

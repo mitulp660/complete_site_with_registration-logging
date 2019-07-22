@@ -19,7 +19,7 @@
                     @endif
 
                     You are logged in!<br>
-                        click if to goto <a href="{{ url('/home') }}">Home</a> OR  <a href="{{ url('/about') }}">About</a> OR  <a href="{{ url('/contact') }}">Contact</a> <br> OR use go back Button <br>
+
                         For welcome screen  click on Laravel on left hand-Top
                 </div>
             </div>

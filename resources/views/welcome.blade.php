@@ -71,6 +71,7 @@
                         <a href="{{ url('/home') }}">Home</a>
                         <a href="{{ url('/about') }}">About</a>
                         <a href="{{ url('/contact') }}">contact</a>
+                        <a href="{{ url('/profile') }}">Profile</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
 

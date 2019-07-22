@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
-
+use App\User;
 class HomeController extends Controller
 {
     /**
@@ -30,6 +31,13 @@ class HomeController extends Controller
     {
         //$users = User::all();
         return view('about');
+    }
+    public function profile()
+    {
+        //$user = Auth::user();
+        $users = User::all();
+
+        return view('profile',['users' => $users]);
     }
     public function contact()
     {
