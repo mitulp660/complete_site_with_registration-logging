@@ -34,15 +34,15 @@ class HomeController extends Controller
     }
     public function profile()
     {
-       // $users = Auth::user();
-       // $posts = $users->posts;
-        $users = User::all();
+        $users = Auth::user();
+        $posts = $users->posts;
+        //$users = User::all();
         //$users = User::where('ID', 1)
             //->orderBy('name', 'desc')
            // ->take(10)
            // ->get();
 
-        return view('profile',['users' => $users]);
+        return view('profile',['posts' => $posts]);
     }
     public function contact()
     {
