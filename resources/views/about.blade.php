@@ -14,12 +14,16 @@
                         </div>
                     @endif
 
+
                    About the site for only a logged on user can see<br>
 
-                        For welcome screen  click on Laravel on left hand-Top
                 </div>
             </div>
         </div>
     </div>
+</div>
+</div>
+<div align="center">
+    For welcome screen  click on Laravel on left hand-Top
 </div>
 @endsection

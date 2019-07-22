@@ -20,10 +20,14 @@
 
                     You are logged in!<br>
 
-                        For welcome screen  click on Laravel on left hand-Top
+
                 </div>
             </div>
         </div>
     </div>
+</div>
+</div>
+<div align="center">
+    For welcome screen  click on Laravel on left hand-Top
 </div>
 @endsection
